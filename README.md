@@ -21,8 +21,8 @@
 - [ ] Install audio drivers for the Hat:
 
 ```
-git clone https://github.com/waveshare/WM8960-Audio-HAT.git
-cd WM8960-Audio-Hat.git
+git clone https://github.com/respeaker/seeed-voicecard
+cd seeed-voicecard
 sudo ./install.sh
 ```
 - [ ] Reboot
@@ -38,7 +38,7 @@ aplay -l
 You should get the output:
 
 ```
-card 1: wm8960soundcard [wm8960-soundcard], device 0: bcm2835-i2s-wm8960-hifi wm8960-hifi-0 [bcm2835-i2s-wm8960-hifi wm8960-hifi-0]
+card 1: seeed2micvoicec [seeed-2mic-voicecard], device 0: bcm2835-i2s-wm8960-hifi wm8960-hifi-0 [bcm2835-i2s-wm8960-hifi wm8960-hifi-0]
 ```
 
 - [ ] List device for audio input:
@@ -50,7 +50,7 @@ arecord -l
 You should get the output:
 
 ```
-card 1: wm8960soundcard [wm8960-soundcard], device 0: bcm2835-i2s-wm8960-hifi wm8960-hifi-0 [bcm2835-i2s-wm8960-hifi wm8960-hifi-0]
+card 1: seeed2micvoicec [seeed-2mic-voicecard], device 0: bcm2835-i2s-wm8960-hifi wm8960-hifi-0 [bcm2835-i2s-wm8960-hifi wm8960-hifi-0]
 ```
 
 - [ ] Test the hardware using ALSA:
