@@ -17,7 +17,7 @@
 - [ ] Mount your Hat on top of a Raspberry Pi and connect a speaker via JST connector.
       You should connect the power via micro-usb connector on the HAT in case you want to use a speaker.
 - [ ] Set the HARDWARE SETUP for:
-      3) USB audio
+3) USB audio
 - [ ] Install audio drivers for the Hat:
 
 ```
@@ -25,7 +25,9 @@ git clone https://github.com/waveshare/WM8960-Audio-HAT.git
 cd WM8960-Audio-Hat.git
 sudo ./install.sh
 ```
-Then reboot
+- [ ] Reboot
+
+
 
 - [ ] List devices for audio output:
 
