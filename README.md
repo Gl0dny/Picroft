@@ -25,7 +25,7 @@ git clone https://github.com/waveshare/WM8960-Audio-HAT.git
 cd WM8960-Audio-Hat.git
 sudo ./install.sh
 ```
-      Then reboot
+Then reboot
 
 - [ ] List devices for audio output:
 
@@ -33,7 +33,7 @@ sudo ./install.sh
 aplay -l
 ```
     
-    You should get the output:
+You should get the output:
 
 ```
 card 1: wm8960soundcard [wm8960-soundcard], device 0: bcm2835-i2s-wm8960-hifi wm8960-hifi-0 [bcm2835-i2s-wm8960-hifi wm8960-hifi-0]
