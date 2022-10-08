@@ -1,0 +1,17 @@
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Robot",
+                "fields": [
+                    {
+                        "name": "base_url",
+                        "type": "text",
+                        "label": "Base URL adress for control server",
+                        "value": "http://192.168.0.200:5000"
+                    }
+                ]
+            }
+        ]
+    }
+}
