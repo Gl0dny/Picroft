@@ -22,7 +22,19 @@ def handle_test_rainbow(self, message):
     except:
         self.speak_dialog("UnableToReach")
         #print to mycroft console
-        LOG.exception("There was an error connecting to a robot")    
+        LOG.exception("There was an error connecting to the robot")    
+
+@intent_handler(IntentBuilder("")
+                .require("Robot")
+                .require("stop"))
+def handle_stop(self, message):
+    try:
+        requests.post(self.base_url + "/stop")
+        self.speak_dialog('Robot')
+        self.speak_dialog('stopping')
+    except:
+        self.speak_dialog("UnableToReach")
+        LOG.exception("There was an error connecting to the robot")
 
 def create_skill():
     return MyRobot()
