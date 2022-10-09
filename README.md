@@ -82,10 +82,10 @@ with a:
 ```
 
 - [ ] Reboot
-- [ ] Test the hardware by following Mycroft guide.
+
+##Pairing up device
+
 - [ ] [Register]("https://sso.mycroft.ai/login?redirect=https:%2F%2Fhome.mycroft.ai%2F) and pair the device 
-
-
 
 Once you have paired your Mycroft Device, pairing information is stored in:
 
@@ -97,3 +97,38 @@ You should move the old config file to a proper directory:
 ```
 mv /home/pi/.mycroft/mycroft.conf /home/pi/.config/mycroft/
 ```
+
+##Testing if Mycroft is working
+
+- [ ] Test the hardware by following Mycroft guide.
+
+Using the CLI:
+```
+mycroft-cli-client
+```
+or
+```
+mycroft-start debug
+```
+
+Using the microphone outside of Mycroft:
+```
+arecord -f cd -Dhw:1 test.wav
+aplay -Dhw:1 test.wav
+```
+
+Audio test:
+```
+mycroft-start audiotest
+```
+
+Specyfing input device:
+```
+mycroft-start audiotest -l
+```
+
+A specific device can be added to your user level configuration file using the Configuration Manager by running:
+```
+mycroft-config set listener.device_name "DEVICE_NAME"
+```
+Where "DEVICE_NAME" is taken from the audio device output. Note the "(hw:1,0)" is not required.
