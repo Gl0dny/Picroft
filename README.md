@@ -2,6 +2,8 @@
 
 The repository contains simple skills code for my [robot](https://github.com/Gl0dny/2-Wheeled-Autonomous-Robot).
 
+The objective is to send POST requests via Flask server running on the main robot platform that are going to run specific scripts.
+
 ## Picroft - using Mycroft for Raspberry Pi 4 
 
 - [ ] Get started with [Mycroft](https://mycroft.ai/get-started/)
