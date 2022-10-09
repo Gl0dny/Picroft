@@ -85,3 +85,15 @@ with a:
 - [ ] Test the hardware by following Mycroft guide.
 - [ ] [Register]("https://sso.mycroft.ai/login?redirect=https:%2F%2Fhome.mycroft.ai%2F) and pair the device 
 
+
+
+Once you have paired your Mycroft Device, pairing information is stored in:
+
+```
+~/.config/mycroft/identity/identity2.json 
+```
+
+You should move the old config file to a proper directory:
+```
+mv /home/pi/.mycroft/mycroft.conf /home/pi/.config/mycroft/
+```
