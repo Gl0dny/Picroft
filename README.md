@@ -1,4 +1,8 @@
-# Picroft - using [Mycroft](https://mycroft.ai/) for Raspberry Pi 4 
+# Learning [Mycroft](https://mycroft.ai/) on Raspberry Pi 4
+
+The repository contains simple skills code for my [robot](https://github.com/Gl0dny/2-Wheeled-Autonomous-Robot).
+
+## Picroft - using Mycroft for Raspberry Pi 4 
 
 - [ ] Get started with [Mycroft](https://mycroft.ai/get-started/)
 - [ ] Get started with [Picroft](https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/get-mycroft/picroft#getting-started-with-picroft)
@@ -83,7 +87,7 @@ with a:
 
 - [ ] Reboot
 
-##Pairing up device
+## Pairing up device
 
 - [ ] [Register]("https://sso.mycroft.ai/login?redirect=https:%2F%2Fhome.mycroft.ai%2F) and pair the device 
 
@@ -98,7 +102,7 @@ You should move the old config file to a proper directory:
 mv /home/pi/.mycroft/mycroft.conf /home/pi/.config/mycroft/
 ```
 
-##Testing if Mycroft is working
+## Testing if Mycroft is working
 
 - [ ] Test the hardware by following Mycroft guide.
 
