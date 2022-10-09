@@ -108,6 +108,11 @@ mv /home/pi/.mycroft/mycroft.conf /home/pi/.config/mycroft/
 
 - [ ] Test the hardware by following Mycroft guide.
 
+Restarting Mycroft's services:
+```
+~/mycroft-core/start-mycroft.sh restart all
+```
+
 Using the CLI:
 ```
 mycroft-cli-client
